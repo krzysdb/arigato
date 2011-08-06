@@ -10,7 +10,16 @@ body{
 	
 }
 
-
+.movingLetter{
+	
+	left:120px;/*Fixed to test*/
+	padding:5px;
+	font-size:16px
+	
+}
+.movingLetter:hover{
+	cursor:pointer;
+}
 
 #sounds{
 	border: 5px solid blue;
