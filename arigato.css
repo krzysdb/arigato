@@ -1,14 +1,75 @@
 body{
+	font-family: Helvetica, Verdana, sans-serif;
+}
 
-}
-h2{
-}
 #container{
+	border: 1px solid black;
+    height: 500px;
+    margin: 0 20%;
+    min-width: 900px;
 	
-
 }
 
-#playground{}
+
 
 #sounds{
+	border: 5px solid blue;
+    float: left;
+    margin: 0;
+    width: 140px;
+    list-styl
+}
+
+
+@font-face {
+	font-family: Katakana;
+	src: url('MoonBeams-katakana_.TTF');
+}
+#matrix{
+	float:left;
+	margin: 1em auto;
+	font-family: Katakana;
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+	background: #000;
+	background-image: -webkit-gradient(linear, 0% 90%, 0% 100%, from(rgba(0, 255, 0, 0)), to(rgba(0, 255, 0, 0.1)));
+	color: rgba(0, 255, 0, .7);
+	text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
+	position: relative;	
+}
+@-webkit-keyframes fall{
+   	from {top: -60px;}
+	to 	{top: 450px;}
+}
+
+
+#matrix div{
+	/* writing-mode: tb-rl; - ughh. doesn't work */
+	position: absolute;	
+	top: 0;
+	/* animation */
+	-webkit-animation-name: fall;			
+	-webkit-animation-iteration-count: infinite; /* use 0 to infinite */
+	-webkit-animation-direction: normal; /* default is normal. use 'alternate' to reverse direction */
+	-webkit-animation-timing-function: ease-out;
+}
+#matrix span{
+	color: rgb(255, 255, 0);
+	text-shadow: rgb(255, 255, 255) 0px 0px 5px;
+}
+.f1{ font-size: 1.2em; }
+.f2{ font-size: .9em; }
+.c1{ color: rgba(0, 255, 0, .5); }
+.d1{ -webkit-animation-duration: 4s; }
+.d2{ -webkit-animation-duration: 20s;
+}
+.d3{
+	-webkit-animation-duration: 8s;
+}
+.d4{
+	-webkit-animation-duration: 10s;
+}
+.de{	
+	-webkit-animation-delay: 3s;
 }
