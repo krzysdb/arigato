@@ -10,7 +10,16 @@ body{
 	
 }
 
-
+.movingLetter{
+	
+	left:120px;/*Fixed to test*/
+	padding:5px;
+	font-size:16px
+	
+}
+.movingLetter:hover{
+	cursor:pointer;
+}
 
 #sounds{
 	border: 5px solid blue;
@@ -41,10 +50,11 @@ body{
 	background: #000;
 	background-image: -webkit-gradient(linear, left top, left bottom, 
                              from(#00abeb), to(white), 
-                             color-stop(0.5, white), color-stop(0.5, #66cc00));
+                             color-stop(0.5, white), color-stop(0.5, #cc6600));
 	color: rgba(0, 0, 0, .7);
 	text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
 	position: relative;	
+	border:3px solid;
 }
 @-webkit-keyframes fall{
    	from {top: -60px;}
