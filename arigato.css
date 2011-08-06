@@ -39,8 +39,10 @@ body{
 	height: 400px;
 	overflow: hidden;
 	background: #000;
-	background-image: -webkit-gradient(linear, 0% 90%, 0% 100%, from(rgba(0, 255, 0, 0)), to(rgba(0, 255, 0, 0.1)));
-	color: rgba(0, 255, 0, .7);
+	background-image: -webkit-gradient(linear, left top, left bottom, 
+                             from(#00abeb), to(white), 
+                             color-stop(0.5, white), color-stop(0.5, #66cc00))
+	color: rgba(0, 0, 0, .7);
 	text-shadow: rgba(255, 255, 255, .8) 0px 0px 4px;
 	position: relative;	
 }
