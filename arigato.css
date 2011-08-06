@@ -5,7 +5,7 @@ body{
 #container{
 	border: 1px solid black;
     height: 500px;
-    margin: 0 20%;
+	text-align:center;
     min-width: 900px;
 	
 }
@@ -17,9 +17,16 @@ body{
     float: left;
     margin: 0;
     width: 140px;
-    list-styl
+    list-style:none;
+    padding:0;
 }
 
+#sounds li{
+	width:20px;
+	float:left;
+	padding:3px;
+}
+#sounds li:hover{background: #c0c0c0;cursor:pointer;}
 
 @font-face {
 	font-family: Katakana;
@@ -27,7 +34,6 @@ body{
 }
 #matrix{
 	float:left;
-	margin: 1em auto;
 	font-family: Katakana;
 	width: 600px;
 	height: 400px;
