@@ -104,7 +104,7 @@ function populate(){
 	selected.innerHTML = katakana[index].character;
 	
 	//we store that value in the local storage
-	window.localStorage.setItem('value', index);
+	window.localStorage.setItem('index', index);
 	
 	var el = document.getElementById("sounds");
 	
@@ -117,38 +117,41 @@ function populate(){
 		li.innerHTML = consonant;
 		li.onclick = function(){
 			var self = this;
-			
-			//var selectedSound = window.localStorage.getItem('sound');
-			
-		    //window.localStorage.setItem('sound', self.innerHTML);
-		    
-		    areTheyTheSame(self.innerHTML);
 		
-
+		    areTheyTheSame(self.innerHTML);
+	
 		};
 		el.appendChild(li);
-		
-
-	
-	/*var selectedLetters = document.getElementsByClassName('movingLetter');
-	for(var i=0; i<selectedLetters.length; i++){
-		selectedLetters[i].onclick = function(){
-			
-		};
-	}*/
 	
 	}
 
 };
 
 function areTheyTheSame(selectedSound){
-	var index2 = window.localStorage.getItem('value');
-	alert(katakana[index2].consonant +' '+ selectedSound);
+	
+	var index2 = window.localStorage.getItem('index'),
+		count,
+		messageP = document.getElementById('passed'),
+		messageF = document.getElementById('failed');
+	
+	
+	//alert(katakana[index2].consonant +' '+ selectedSound);
+	
+	debugger;
 	
 	if (katakana[index2].consonant == selectedSound){
-		alert('wow');
+		count = window.localStorage.getItem('failed');
+		count ++;
+		window.localStorage.setItem('failed',count);
+		messageP.innerHTML = count;
+		
 	}else{
-		alert('keep trying');
+		
+		count = window.localStorage.getItem('passed');
+
+		count ++;
+		window.localStorage.setItem('passed',count);
+		messageF.innerHTML = count;
 	}
 	
 	
