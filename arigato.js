@@ -102,6 +102,7 @@ function populate(){
 	//we populate the value of one letter moving down. (PLEASE NOTE INDEX HARCODED TO 1)
 	var selected = document.getElementById('selected');
 	selected.innerHTML = katakana[index].character;
+	selected.style.display = "none";
 	
 	//we store that value in the local storage
 	window.localStorage.setItem('index', index);
@@ -115,14 +116,13 @@ function populate(){
 			consonant = "";
 		}
 		li.innerHTML = consonant;
-		li.onclick = function(){
-			var self = this;
-		
-		    areTheyTheSame(self.innerHTML);
-	
-		};
+		// li.onclick = function(){
+		// 	var self = this;
+		// 
+		//     areTheyTheSame(self.innerHTML);
+		// 	
+		// };
 		el.appendChild(li);
-	
 	}
 
 };

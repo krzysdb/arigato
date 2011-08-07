@@ -10,10 +10,14 @@ ul{
 
 #container{
 	border: 1px solid black;
-    height: 500px;
+	height: 600px;
 	text-align:center;
-    min-width: 900px;
-	
+  width: 800px;	
+}
+
+#start-button{
+	text-align:left;
+	font-size: 16px;
 }
 
 .movingLetter{
@@ -44,11 +48,10 @@ ul{
 
 
 #messages{
-	
 	border: 5px solid #cc0066;
-    margin: 0;
-    width: 140px;
-    border-radius: 12px;
+	margin: 0;
+  width: 140px;
+  border-radius: 12px;
 
 }
 

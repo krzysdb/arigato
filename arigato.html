@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="arigato.css" type="text/css" media="screen" charset="utf-8"> 
     <!-- The leaves.js file creates the leaves --> 
     <script src="arigato.js" type="text/javascript" charset="utf-8"></script> 
+	<script src="game.js" type="text/javascript" charset="utf-8"></script>
     </head> 
-  <body onload="populate()"> 
-
+  <body onload="populate()">
     <div id="container"> 
     <h2>ARIGATO GAME</h2>
+	
+	<div id="start-button"><a href="javascript:void(0)" id="game-start">New Game</a></div>
      
       <div id="matrix">	
 <!--				<div class="d1 c1 de" style="left:5px;">
@@ -41,7 +43,7 @@
 				<div class="d1 c1 de" style="left:430px;">sgfy<span>b</span>0hfrese<span>4</span>kc</div>
 -->
 
-	  	<div id="selected" class="d2 f1 movingLetter"></div>
+	  	<div id="selected" class=""></div>
 	  </div>
       
       
@@ -52,6 +54,10 @@
     	<li>Failed:<span id="failed">0</span></li>
       </ul>
     </div> 
+
+	<script	type="text/javascript">
+		var game = new GameSystem();
+	</script>
     
   </body> 
 </html> 
