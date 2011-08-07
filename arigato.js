@@ -112,23 +112,8 @@ function populate(){
 //		var consonant = katakana[i].consonant;
 //		td.innerHTML = consonant;
 //	}
-	
-	
-//	createTable(6)
-//	for(var i=0; i<katakana.length; i++){
-//		var li = document.createElement('li');
-//		var consonant = katakana[i].consonant;
-//		if(consonant == null){
-//			consonant = "";
-//		
-//		li.innerHTML = consonant;
-//		// li.onclick = function(){
-//		// 	var self = this;
-//		// 
-//		//     areTheyTheSame(self.innerHTML);
-//		// 	
-//		// };
-//		el.appendChild();
+
+
 	
 	
 	createTable(5);
@@ -141,26 +126,21 @@ function createTable(col){
 		var tr = document.createElement("tr");
 		for(var j=0; j<col; j++){
 			var td = document.createElement("td");
-			var consonant = katakana[(i*col)+j].consonant
-			if(consonant == null){
-				consonant = "";
+			if( (i*col)+j < katakana.length){
+				var consonant = katakana[(i*col)+j].consonant
+				if(consonant == null){
+					consonant = "";
+				}
+				td.innerHTML = consonant;
+				tr.appendChild(td);
 			}
-			td.innerHTML = consonant;
-			tr.appendChild(td);
 		}
 		el.appendChild(tr);
 	}
 
 	
 }
-//	var rows === (katakana.length)/col;
-//	for (var i=0; i<=rows.length; i++) {
-//		var tr = document.createElement('tr');
-//		for (var i=0; i<col.length; i++){
-//			var td = document.createElement('td');
-//		}	
-//	
-//	}
+
 //function highlighter() {
 //	onEvent
 //		tr + ":hover"
