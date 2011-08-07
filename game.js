@@ -11,6 +11,7 @@ function GameSystem(){
 		var elem = document.getElementById("selected");
 		elem.style.display = "block"; //block
 		elem.className = "d2 movingLetter";
+		
 	}
 	
 	

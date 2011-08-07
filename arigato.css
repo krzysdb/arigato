@@ -12,7 +12,7 @@ ul{
 	border: 1px solid black;
 	height: 600px;
 	text-align:center;
-  width: 800px;	
+  width: 900px;	
 }
 
 #start-button{
@@ -44,7 +44,7 @@ ul{
 	float:left;
 	padding:3px;
 }
-#sounds li:hover{background: #c0c0c0;border-radius: 4px;cursor:pointer;}
+#sounds td:hover{background: #c0c0c0;border-radius: 4px;cursor:pointer;}
 
 
 #messages{
