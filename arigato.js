@@ -106,17 +106,10 @@ function populate(){
 	
 	//we store that value in the local storage
 	window.localStorage.setItem('index', index);
-//	var el = document.getElementById("sounds");
-//	for (var i=0, i<katakana.length; i++){
-//		var td.document.createElement('td');
-//		var consonant = katakana[i].consonant;
-//		td.innerHTML = consonant;
-//	}
 
 
-	
-	
 	createTable(5);
+	
 };
 
 function createTable(col){
@@ -132,6 +125,9 @@ function createTable(col){
 					consonant = "";
 				}
 				td.innerHTML = consonant;
+				// if( i==0 && j==0){
+				// 	td.className = "highlighting";
+				// }
 				tr.appendChild(td);
 			}
 		}

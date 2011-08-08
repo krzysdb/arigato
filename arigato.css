@@ -2,30 +2,27 @@ body{
 	font-family: Helvetica, Verdana, sans-serif;
 }
 
-ul{
-	list-style:none;
-	margin:0;
-	padding:0;
-}
-
 #container{
 	border: 1px solid black;
 	height: 600px;
 	text-align:center;
   width: 900px;	
 }
+#buttons{
+	text-align:left;
+	width:606px;
+}
 
-#start-button{
+
+#start-button #stop-button{
 	text-align:left;
 	font-size: 16px;
 }
-
 .movingLetter{
-	
 	left:120px;/*Fixed to test*/
 	padding:5px;
-	font-size:16px
-	
+	font-size:24px;
+	font-weight:bold;
 }
 .movingLetter:hover{
 	cursor:pointer;
@@ -46,22 +43,21 @@ ul{
 }
 #sounds td:hover{background: #c0c0c0;border-radius: 4px;cursor:pointer;}
 
-
 #messages{
 	border: 5px solid #cc0066;
 	margin: 0;
   width: 140px;
   border-radius: 12px;
-
 }
 
-@font-face {
-	font-family: Katakana;
-	src: url('MoonBeams-katakana_.TTF');
+.highlighting{
+	background: #00ff00;
+	border-radius: 4px;
 }
+
+
 #matrix{
 	float:left;
-	font-family: Katakana;
 	width: 600px;
 	height: 400px;
 	overflow: hidden;
@@ -97,14 +93,7 @@ ul{
 .f1{ font-size: 1.2em; }
 .f2{ font-size: .9em; }
 .c1{ color: rgba(0, 255, 0, .5); }
-.d1{ -webkit-animation-duration: 4s; }
-.d2{ -webkit-animation-duration: 3s;
-}
-.d3{
-	-webkit-animation-duration: 8s;
-}
-.d4{
-	-webkit-animation-duration: 10s;
+.d1{ -webkit-animation-duration: 10s;
 }
 .de{	
 	-webkit-animation-delay: 3s;
